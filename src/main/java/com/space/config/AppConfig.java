@@ -45,13 +45,13 @@ public class AppConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        dataSource.setUrl("jdbc:mysql://localhost:3306/cosmoport?serverTimezone=UTC");
-        dataSource.setUrl("jdbc:mysql://192.168.0.105:42333/cosmoport?serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/cosmoport?serverTimezone=UTC");
+//        dataSource.setUrl("jdbc:mysql://192.168.0.105:42333/cosmoport?serverTimezone=UTC");
 
-//        dataSource.setUsername("root");
-//        dataSource.setPassword("root");
         dataSource.setUsername("root");
-        dataSource.setPassword("my-secret-pw");
+        dataSource.setPassword("root");
+//        dataSource.setUsername("root");
+//        dataSource.setPassword("my-secret-pw");
         return dataSource;
     }
 
